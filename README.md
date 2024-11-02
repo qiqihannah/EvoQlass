@@ -33,7 +33,17 @@ conda activate quantum_env
 ```
 
 In order to run Qlinical, you can use the following command line:
-
 ```
 python qnn_classifier.py [ansatz] [entangl] [mode] [num_rep] [run] [num_feat]
+```
+Ansatz types: "realamplitudes", "efficientsu2", "excitationpreserving", "paulitwodesign"
+Entanglement types: "full", "linear", "reverse_linear", "pairwise", "circular", "sca"
+Mode: for excitationpreserving, 0 represents "fsim"; 1 represents "iswap"
+Num_rep: 1,3,5,7
+Num_feat: 4,5,6,7,8
+Run: The number of repeats of the experiment
+
+In order to run EvoClass, you can use the following command line:
+```
+python evoclass.py
 ```
