@@ -1,7 +1,7 @@
 # Quantum Neural Network Classifier for Cancer Registry System Testing: A Feasibility Study
 
 ## Abstract
-The Cancer Registry of Norway (CRN) is a part of the Norwegian Institute of Public Health (NIPH) and is tasked with producing statistics on cancer among the Norwegian population. For this task, CRN develops, tests, and evolves a software system called Cancer Registration Support System (CaReSS). It is a complex socio-technical software system that interacts with many entities (e.g., hospitals, medical laboratories, and other patient registries) to achieve its task. For cost-effective testing of CaReSS, CRN has employed EvoMaster, an AI-based REST API testing tool combined with an integrated classical machine learning model. Within this context, we propose Qlinical to investigate the feasibility of using, inside EvoMaster, a Quantum Neural Network (QNN) classifier, i.e., a quantum machine learning model, instead of the existing classical machine learning model. Results indicate that Qlinical can achieve performance comparable to that of EvoClass. We further explore the effects of various QNN configurations on performance and offer recommendations for optimal QNN settings for future QNN developers.
+With the rapid advancement of quantum computing, research on quantum machine learning (QML) algorithms has grown significantly. Among these, the Quantum Neural Network (QNN) stands out as one of the promising algorithms. QNN integrates principles of quantum computing with artificial neural networks to process data, leveraging the characteristics of quantum mechanics. Inspired by applications of QNN in several fields, we investigate QNN in software testing for the Cancer Registry of Norway (CRN), which is a part of the Norwegian Institute of Public Health (NIPH) and is tasked with producing statistics on cancer among the Norwegian population. For this task, CRN develops, tests, and evolves a software system called Cancer Registration Support System (CaReSS). It is a complex socio-technical software system that interacts with many entities (e.g., hospitals, medical laboratories, and other patient registries) to achieve its task. For cost-effective testing of CaReSS, CRN has employed EvoMaster, an AI-based REST API testing tool combined with an integrated classical machine learning model. Within this context, we propose EvoQlass to investigate the feasibility of using, inside EvoMaster, a QNN classifier, instead of the existing classical machine learning model. Results indicate that EvoQlass can achieve performance comparable to that of EvoClass. We further explore the effects of various QNN configurations on performance and offer recommendations for optimal QNN settings for future QNN developers.
 
 ## Overview
 <img src="qnn_overview.png" width="800">
@@ -32,7 +32,7 @@ First, you need to activate the conda environment:
 conda activate quantum_env
 ```
 
-In order to run Qlinical, you can use the following command line:
+In order to run EvoQlass, you can use the following command line:
 ```
 python qnn_classifier.py [ansatz] [entangl] [mode] [num_rep] [run] [num_feat]
 ```
